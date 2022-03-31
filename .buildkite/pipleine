@@ -1,0 +1,9 @@
+steps:
+  - label: ":docker:"
+    command:
+      - "docker build . -t alialhjouj/dokcer"
+      - "docker push alialhjouj/dokcer"
+    plugins:
+      - docker-login#v2.0.1:
+          username: alialhjouj
+          password-env: DOCKER_LOGIN_PASSWORD
