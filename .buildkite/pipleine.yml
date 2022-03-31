@@ -6,4 +6,4 @@ steps:
     plugins:
       - docker-login#v2.0.1:
           username: alialhjouj
-          password-env: DOCKER_LOGIN_PASSWORD
+          password-env: MY_DOCKER_LOGIN_PASSWORD
